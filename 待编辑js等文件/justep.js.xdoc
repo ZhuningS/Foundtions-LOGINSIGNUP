@@ -1,0 +1,178 @@
+/**
+	@name $UI/system/lib/justep
+	@class
+	@category javascript
+	@model UI2
+	@description justep工具类
+*/
+
+/**
+	@name $UI/system/lib/justep.UUID
+	@property
+	@type $UI/system/lib/base/uuid
+	@see $UI/system/lib/base/uuid
+*/
+
+/**
+	@name $UI/system/lib/justep.Base64
+	@property
+	@type $UI/system/lib/base/base64
+	@see $UI/system/lib/base/base64
+*/
+
+/**
+	@name $UI/system/lib/justep.Date
+	@property
+	@type $UI/system/lib/base/date
+	@see $UI/system/lib/base/date
+*/
+
+/**
+	@name $UI/system/lib/justep.String
+	@property
+	@type $UI/system/lib/base/string
+	@see $UI/system/lib/base/string
+*/
+
+/**
+	@name $UI/system/lib/justep.Browser
+	@property
+	@type $UI/system/lib/base/browser
+	@see $UI/system/lib/base/browser
+*/
+
+/**
+	@name $UI/system/lib/justep.Message
+	@property
+	@type $UI/system/lib/base/message
+	@see $UI/system/lib/base/message
+*/
+
+/**
+	@name $UI/system/lib/justep.Error
+	@property
+	@type $UI/system/lib/base/error
+	@see $UI/system/lib/base/error
+*/
+
+/**
+	@name $UI/system/lib/justep.URL
+	@property
+	@type $UI/system/lib/base/url
+	@see $UI/system/lib/base/url
+*/
+
+/**
+	@name $UI/system/lib/justep.Util
+	@property
+	@type $UI/system/lib/base/util
+	@see $UI/system/lib/base/util
+*/
+
+/**
+	@name $UI/system/lib/justep.Array
+	@property
+	@type $UI/system/lib/base/array
+	@see $UI/system/lib/base/array
+*/
+
+/**
+	@name $UI/system/lib/justep.Console
+	@property
+	@type $UI/system/lib/base/console
+	@see $UI/system/lib/base/console
+*/
+
+/**
+	@name $UI/system/lib/justep.Portal
+	@property
+	@type $UI/system/lib/portal/portal
+	@see $UI/system/lib/portal/portal
+*/
+
+/**
+	@name $UI/system/lib/justep.Shell
+	@property
+	@type $UI/system/lib/portal/shell
+	@see $UI/system/lib/portal/shell
+*/
+
+
+/**
+	@name $UI/system/lib/justep.Object
+	@property
+	@type $UI/system/lib/base/object
+	@see $UI/system/lib/base/object
+*/
+
+/**
+	@name $UI/system/lib/justep.Observable
+	@property
+	@type $UI/system/lib/base/observable
+	@see $UI/system/lib/base/observable
+*/
+
+/**
+	@name $UI/system/lib/justep.Operational
+	@property
+	@type $UI/system/lib/base/operational
+	@see $UI/system/lib/base/operational
+*/
+
+/**
+	@name $UI/system/lib/justep.ModelBase
+	@property
+	@type $UI/system/lib/base/modelBase
+	@see $UI/system/lib/base/modelBase
+*/
+
+/**
+	@name $UI/system/lib/justep.Context
+	@property
+	@type $UI/system/lib/base/context
+	@see $UI/system/lib/base/context
+*/
+
+/**
+	@name $UI/system/lib/justep.Bind
+	@property
+	@type $UI/system/lib/bind/bind
+	@see $UI/system/lib/bind/bind
+*/
+
+/**
+	@name $UI/system/lib/justep.Express
+	@property
+	@type $UI/system/lib/base/express
+	@see $UI/system/lib/base/express
+*/
+
+/**
+	@name $UI/system/lib/justep.Component
+	@property
+	@type $UI/system/lib/base/component
+	@see $UI/system/lib/base/component
+*/
+
+
+/**
+	@name $UI/system/lib/justep.ViewComponent
+	@property
+	@type $UI/system/lib/base/viewComponent
+	@see $UI/system/lib/base/viewComponent
+*/
+
+/**
+	@name $UI/system/lib/justep.BindComponent
+	@property
+	@type $UI/system/lib/base/bindComponent
+	@see $UI/system/lib/base/bindComponent
+*/
+
+/**
+	@name $UI/system/lib/justep.Baas
+	@property
+	@type $UI/system/lib/base/baas
+	@see $UI/system/lib/base/baas
+*/
+	

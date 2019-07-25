@@ -1,0 +1,67 @@
+/**
+	@include $UI2/system/lib/base/context.biz
+*/
+
+/**
+	@name $UI/system/lib/base/context
+	@class
+	@extends $UI/system/lib/base/object
+	@category javascript
+	@model UI2
+	@description 页面上下文
+*/
+
+/**
+	@name $UI/system/lib/base/context#constructor
+	@function
+	@description 构造函数
+	@param data 页面上下文数据
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/context#isDebug
+	@function
+	@description 判断当前是否是debug模式
+	@returns {Boolean}
+*/
+
+
+/**
+	@name $UI/system/lib/base/context#getRequestParameters
+	@function
+	@description 获取所有的请求参数
+	@returns json格式的数据
+*/
+
+/**
+	@name $UI/system/lib/base/context#getRequestParameter
+ 	@function
+ 	@description 获取页面请求URL中的参数
+	@param {String} name <b>[required]</b>参数名称
+	@returns {String} 参数的值
+*/
+
+/**
+	@name $UI/system/lib/base/context#getID
+	@function
+	@description 获取上下文id 
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/context#getSkin
+	@function
+	@description 获取当前风格
+	@returns {String}
+*/
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<form name="@@(FormName)@@" method="@@(FormMethod)@@" action="@@(FormAction)@@">
+  <table width="100%" border="0" cellspacing="0" cellpadding="1" class="TitleColor">
+    <tr style="vertical-align: top">
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="4">
+          <tr class="HeaderColor">
+            <td width="20%" style="vertical-align: top">
+              <!-- TemplateBeginEditable name="Title" -->
+              <h3>Sign In</h3>
+              <!-- TemplateEndEditable -->
+            </td>
+            <td width="80%" style="vertical-align: top">
+              <!-- TemplateBeginIf cond="Header" --> <!-- TemplateBeginEditable name="Title2" -->
+              
+            </td>
+          </tr>
+          <tr style="vertical-align: top">
+            <td width="20%" class="TitleColor">
+              <!-- TemplateBeginEditable name="Title3" -->
+              <label for="username"><strong>User Name</strong></label>
+&nbsp;<!-- TemplateEndEditable --><br>
+              <input id="username" name="ÓÃ»§Ãû" type="text" size="25">
+              
+              <!-- TemplateBeginEditable name="Title4" -->
+              <label for="password"><strong>Password</strong></label>
+&nbsp;<!-- TemplateEndEditable --><br>
+              <input id="password" name="ÃÜÂë" type="password" size="25">
+              <p>
+                <input type="submit" name="µÇÂ¼" value="µÇÂ¼">
+              </p>
+            </td>
+            
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,163 @@
+/**
+	@name $UI/system/lib/base/browser
+	@class
+	@category javascript
+	@model UI2
+	@description 浏览器工具类
+*/
+
+/**
+	@name $UI/system/lib/base/browser.Safari
+	@property
+	@type {Boolean}
+	@description 判断是否是Safari
+*/
+
+/**
+	@name $UI/system/lib/base/browser.IE
+	@property
+	@type {Boolean}
+	@description 判断是否是IE
+*/
+
+/**
+	@name $UI/system/lib/base/browser.IE6
+	@property
+	@type {Boolean}
+	@description 判断是否是IE6
+*/
+
+/**
+	@name $UI/system/lib/base/browser.IE7
+	@property
+	@type {Boolean}
+	@description 判断是否是IE7
+*/
+
+/**
+	@name $UI/system/lib/base/browser.IE8
+	@property
+	@type {Boolean}
+	@description 判断是否是IE8
+*/
+
+/**
+	@name $UI/system/lib/base/browser.IE9
+	@property
+	@type {Boolean}
+	@description 判断是否是IE9
+*/
+
+/**
+	@name $UI/system/lib/base/browser.IE10
+	@property
+	@type {Boolean}
+	@description 判断是否是IE10
+*/
+
+/**
+	@name $UI/system/lib/base/browser.IE11
+	@property
+	@type {Boolean}
+	@description 判断是否是IE11
+*/
+
+/**
+	@name $UI/system/lib/base/browser.FF
+	@property
+	@type {Boolean}
+	@description 判断是否是FireFox
+*/
+
+/**
+	@name $UI/system/lib/base/browser.hasTouch
+	@property
+	@type {Boolean}
+	@description 判断是否支持触摸功能
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isAndroid
+	@property
+	@type {Boolean}
+	@description 判断是否是Android
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isIphone
+	@property
+	@type {Boolean}
+	@description 判断是否是Iphone
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isIpad
+	@property
+	@type {Boolean}
+	@description 判断是否是Ipad
+*/
+
+/**
+	@name $UI/system/lib/base/browser.deviceType
+	@property
+	@type {String}
+	@description 客户端类型, 值域{"Android", "iPhone", "iPad", "iPod", "Windows Phone", "PC"}
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isPC
+	@property
+	@type {Boolean}
+	@description 是否是PC
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isMobile
+	@property
+	@type {Boolean}
+	@description 是否是手机
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isIOS
+	@property
+	@type {Boolean}
+	@description 是否是IOS系统
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isPCFromUserAgent
+	@property
+	@type {Boolean}
+	@description 根据user agent判断是否是PC
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isMobileFromUserAgent
+	@property
+	@type {Boolean}
+	@description 根据user agent判断是否是手机
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isSimulator
+	@property
+	@type {Boolean}
+	@description 是否是模拟器
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isX5App
+	@property
+	@type {Boolean}
+	@description 是否是X5手机应用
+*/
+
+/**
+	@name $UI/system/lib/base/browser.isWeChat
+	@property
+	@type {Boolean}
+	@description 是否是微信环境
+*/
+
+

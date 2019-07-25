@@ -1,0 +1,108 @@
+/**
+	@name $UI/system/lib/base/xml
+	@class
+	@category javascript
+	@model UI2
+	@description XML工具类
+*/
+
+/**
+	@name $UI/system/lib/base/xml.fromString
+	@function
+	@description 将String格式的XML转换成XML对象
+	@param {String} xmlStr
+	@returns {Document}
+*/
+
+/**
+	@name $UI/system/lib/base/xml.toString
+	@function
+	@description 将XML对象转换成String格式
+	@param {Node} xmlNode
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/xml.eval
+	@function
+	@description 在指定的节点上执行XPath, 返回相应的节点
+	@param {Node} context 指定的XML节点
+	@param {String} xpathExp XPath表达式
+	@param {String} resultType 标识返回单个节点或多个节点，取值范围{"single", "array"}
+	@param {String} namespaces 命名空间
+	@returns {Object}
+*/
+
+/**
+	@name $UI/system/lib/base/xml.eval2
+	@function
+	@description 在指定的节点上执行XPath, 返回相应的节点(简化版本)
+	@param {Node} context 指定的XML节点
+	@param {String} xpathExp XPath表达式
+	@param {String} resultType 标识返回单个节点或多个节点，取值范围{"single"}
+	@param {String} namespaces 命名空间
+	@returns {Object}
+*/
+
+/**
+	@name $UI/system/lib/base/xml.getChildByName
+	@function
+	@description 根据tagName获取子节点
+	@param {Node} context 指定的XML节点
+	@param {String} name 子节点的tagName
+	@returns {Node}
+*/
+
+/**
+	@name $UI/system/lib/base/xml.insertNodes
+	@function
+	@description 插入节点
+	@param {Node} context 指定的XML节点
+	@param {String} xpathExp 插入位置的XPath表达式
+	@param {List} nodes 待插入的节点列表
+	@param {Boolean} isBefore 是否插入到指定位置之前
+	@returns {Integer} 插入节点位置个数（就是xpathExp计算出的个数）
+*/
+
+/**
+	@name $UI/system/lib/base/xml.removeNodes
+	@function
+	@description 删除节点
+	@param {Node} context 指定的XML节点
+	@param {String} xpathExp 被删除节点的XPath
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/xml.replaceNodes
+	@function
+	@description 替换节点
+	@param {Node} context 指定的XML节点
+	@param {String} xpathExp 被替换节点的XPath表达式
+	@param {List} nodes 待插入的节点列表
+	@returns {Integer} 被替换节点的个数
+*/
+
+/**
+	@name $UI/system/lib/base/xml.setNodeText
+	@function
+	@description 设置节点文本内容
+	@param {Node} context 指定的XML节点
+	@param {String} xpathExp 指定节点的XPath
+	@param {String} text 
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/xml.getNodeText
+	@function
+	@description 获取节点文本内容， 如果节点存在，返回指定的默认值
+	@param {Node} context 指定的XML节点
+	@param {String} xpathExp 指定的节点的XPath
+	@param {String} defaultValue 默认值 
+	@returns {String}
+*/
+
+
+
+

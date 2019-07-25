@@ -1,0 +1,62 @@
+/**
+	@name $UI/system/lib/base/message
+	@class
+	@category javascript
+	@model UI2
+	@description 消息
+*/
+
+/**
+	@name $UI/system/lib/base/message#Message
+	@function
+	@description 构造函数
+	@param {String} cfg
+*/
+
+/**
+	@name $UI/system/lib/base/message#getCode
+	@function
+	@description 获取消息编码
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/message#getMessage
+	@function
+	@description 获取消息内容
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/message#getReason
+	@function
+	@description 获取原因
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/message#getStack
+	@function
+	@description 获取错误栈
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/message#getMessages
+	@function
+	@description 获取所有消息内容
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/message.getMessage
+	@function
+	@description 获取消息内容
+	@param {String} cfg 选项
+	@param {String} p1  消息参数1
+	@param {String} p2  消息参数2
+	@param {String} p3  消息参数3
+	@param {String} p4  消息参数4
+	@param {String} p5  消息参数5
+	@returns {String}
+*/

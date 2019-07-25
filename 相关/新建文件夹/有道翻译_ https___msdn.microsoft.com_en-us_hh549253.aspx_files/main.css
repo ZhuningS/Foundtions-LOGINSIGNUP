@@ -1,0 +1,275 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    font-family: Arial, sans-serif;
+    font-size: 62.5%;
+    overflow:hidden;
+}
+.yd-snap {
+    color:#666;
+    font-size:12px;
+    padding:15px 20px 0;
+    margin:0;
+}
+.yd-snap-hd {
+    width:680px;
+}
+.yd-snap-logo {
+    float:left;
+    background: url(http://shared.ydstatic.com/r/2.0/p/fanyi-logo-s.png) no-repeat;
+    height: 37px;
+    width:147px;
+    overflow: hidden;
+    text-indent: -9999em;
+    margin:0 30px 0 0;
+}
+.yd-snap a {
+    color:#2200c1;
+}
+.yd-snap-desc {
+    clear:both;
+    padding:10px 0;
+    line-height:2;
+    overflow:hidden;
+}
+.yd-snap-line {
+    height:2px;
+    background-color:#e2e2e2;
+    font-size:0;
+    overflow:hidden;
+}
+.yd-snap-cont {
+    position:relative;
+}
+.s-inpt-w, .s-btn-w {
+    background:url(../images/pic.gif) no-repeat;
+}
+.c-fm-w {
+    position:relative;
+    z-index:2;
+    overflow:hidden;
+    float:left;
+}
+.s-inpt-w {
+    display:inline-block;
+    width:412px;
+    height:37px;
+    background-position:0 -67px;
+    vertical-align: top;
+}
+.s-inpt {
+    border:none;
+    background:transparent;
+    width:402px;
+    font: 17px arial;
+    height: 25px;
+    padding: 7px 5px 3px;
+    padding: 9px 5px 2px\9;
+}
+.s-btn-w {
+    display:inline-block;
+    height: 37px;
+    width: 88px;
+}
+.s-btn-w:hover {
+    background-position:-176px 0;
+}
+.s-btn-w:active {
+    background-position:-88px 0;
+}
+.s-btn {
+    cursor:pointer;
+    height: 34px;
+    width: 88px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align:center;
+    border:none;
+    background:none;
+}
+iframe{
+    border:none;
+}
+.bps-text-input{
+    width:248px;
+    height:24px;
+    line-height: 24px;
+    border:1px solid #c0c0c0;
+    border-color:#c0c0c0 #d9d9d9 #d9d9d9 #d9d9d9;
+    border-radius:1px;
+}
+.btn-wpt{
+    width:49px;
+    height:27px;
+    background:url(../images/btn_fy.png) no-repeat;
+    color:#fff;
+    text-align:center;
+    border:none;
+    cursor:pointer;
+    vertical-algn: top;
+}
+
+#customSelectBtn {
+    border: 1px solid #BFBFC8;
+    cursor: pointer;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 5px;
+    padding: 1px 20px 1px 5px;
+    position: relative;
+    vertical-align: top;
+    width: 97px;
+    font-size: 12px;
+}
+#customSelectBtn .btn_arrow {
+    border-color: #6C6C6C transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 5px;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 0;
+}
+/**
+* select-options 组件样式
+**/
+.sel {
+    width: 245px;
+    padding: 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 12px;
+    border-left: 1px solid #BFBFC8;
+    border-bottom: 1px solid #BFBFC8;
+    position: absolute;
+    z-index: 9999;
+    left: -1px;
+    top: 23px;
+    display: none;
+}
+
+.sel li.isfl{
+    float:left;
+    width:122px;
+    background: #fff;
+}
+
+.sel li.topBorder{
+    border-top: 1px solid #BFBFC8;
+    background: #fff;
+}
+
+.sel li.topBorder1{
+    border-top: 1px solid #fff;
+}
+
+.sel li.rightBorder{
+    border-right: 1px solid #BFBFC8;
+    background: #fff;
+}
+
+.sel li.normal{
+    width: 122px;
+    border-top: 1px solid #BFBFC8;
+    border-right: 1px solid #BFBFC8;
+    background: #fff;
+}
+
+.sel li a {
+    display: block;
+    height: 26px;
+   /* padding: 0 5px 0 13px;*/
+    line-height: 26px;
+    text-decoration: none;
+    text-align: center;
+    font-family:arial "宋体";
+}
+
+#customSelectOption li a{
+    color: #2a2a2a;
+}
+
+.sel a:hover, .sel .on a {
+    background: #F5F5F5;
+}
+.top-tips {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: #ddd;
+}
+.top-tips a {
+    color: #333;
+    text-decoration: none;
+}
+.yd-snap-desc .mobile-pickup, .mobile-expand{
+    display:none;
+}
+@media screen and (max-width: 800px){
+    .top-tips{
+        position: static;
+        float: right;
+        margin-top: 3px;
+    }
+    .yd-snap-hd{
+        width:auto;
+    }
+    .yd-snap-hd form{
+        clear:both;
+        padding-top: 10px;
+    }
+    .btn-wpt{
+        height: 28px;
+    }
+    .yd-snap-hd .bps-text-input{
+        display: block;
+        margin-bottom:10px;
+        width: 95%;
+    }
+    .yd-snap-logo{
+        height: 18px;
+        width: 73px;
+        background-size: 73px 18px;
+        margin-bottom: 10px;
+    }
+    .yd-snap-desc {
+        padding: 5px 0;
+        line-height: 16px;
+    }
+    .yd-snap-desc{
+        overflow: visible;
+    }
+    .yd-snap-desc .mobile-pickup{
+        display: block;
+        float: right;
+        background: url("../images/packup-icon.png") 50% 50% no-repeat;
+        font-weight: bolder;
+        margin-top: -16px;
+        width: 20px;
+        height: 20px;
+        background-size:20px 20px;
+        text-align: center;
+        line-height: 20px;
+        cursor:pointer;
+    }
+    .mobile-expand{
+        display: none;
+        background: url("../images/expand-icon.png") 50% 50% no-repeat;
+        font-weight: bolder;
+        margin-top: 0px;
+        width: 16px;
+        height: 16px;
+        background-size:20px 20px;
+        text-align: center;
+        line-height: 20px;
+        cursor:pointer;
+       float:left;
+    }
+}

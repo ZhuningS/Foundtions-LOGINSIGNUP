@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<!-- 注释 全局属性 页面的元信息-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+
+<!-- 引用css文件 -->
+<link type="text/css" rel="stylesheet" href="./login.css"></link>
+
+<!-- 引用jquery.js文件， jQuery查询 -->
+<script src="./jquery.js"></script> 
+
+<!-- 引用require.js文件， jQuery查询 -->
+<script src="./require.js"></script> 
+
+<!--????调用ajax()方法，发送服务器请求，回调  注册用户或验证是否登录成功，返回params信息，return ajax对象， -->
+<!-- <script> $.ajax({url: ""}) </script> -->
+
+<!-- <script src="./common.js"></script>  -->
+
+		
+<!-- 调用外部login.JS文件 -->	
+<!-- <script type="text/javascript" src="./login.js"></script> -->
+			
+
+<script>
+	window.onload = function (){
+    // script1 code block
+};
+</script>
+			
+<title>登录页面</title>
+</head>
+		
+       
+<body>
+<center><h3>登录</h3></center>
+			        		
+<div class=" " id=" "  style="width:100%;text-align:center">
+<center>
+<!-- 表单 -->	
+<form name="login" method="post" action="http://120.79.152.58/controller.php">
+			
+<!-- 表单提交到哪里？ -->
+	<table width="100%" border="0" aling=center cellspacing="0" cellpadding="1" class="form">
+		<tr style="vertical-align: top">
+			<td>
+	<table width="100%" border="0" aling=center cellspacing="0" cellpadding="4">
+		<tr class="HeaderColor">
+			<td width="20%" style="vertical-align: top">
+              
+			</td>
+			<td width="80%" style="vertical-align: top">
+              
+			</td>
+		</tr>
+		<tr style="vertical-align: top">
+			<td width="100%" class="TitleColor">
+						
+			
+			<label for="username"><strong>用户名：</strong></label>
+			
+			<!-- 用户名输入框 -->
+			<input id="username" name="用户名" type="text" size="25" class="formtext" placeHolder="请输入账号">
+			
+						
+			<br>
+			<p>
+			&nbsp
+			</p>
+						 
+		
+		<label for="password"><strong>密码：</strong></label>
+		
+			
+		<!-- 密码输入框 -->
+        <input id="password" name="密码" type="password" size="25" class="formtext" placeHolder="请输入密码">
+						
+		
+			</td>
+            
+		</tr>
+	</table>
+			</td>
+		</tr>
+	</table>
+				
+</form>
+
+</center>		
+</div>
+
+			
+<!-- span标签被用来组合文档中的行内元素。 -->
+<span id=" "> </span>
+
+<!-- 登录按钮 -->
+<div id="div5" class="">
+			
+			<center>
+			<input type="button"  name="login" id="btn" value="登录" onclick="login1()">
+			
+			<!--问题？<a href="javascript:void(0);" onclick="js_method()" > -->
+			
+			</center>
+			
+			<br>
+			<p>&nbsp </p>
+			<center>			 
+			<a href = "./sign.html"><span id="span7"  class="form">注册账号</span> </a>
+			&nbsp
+			<i id="i1"></i>
+			&nbsp
+			<a href = " "><span id="span8"  class="form">忘记密码</span></a>
+			</center>
+			
+			
+</div>
+		
+		<script>
+			/*注册新用户
+		 *params 内容：name(用户名),password(密码),email(电子邮箱),type(值为register)。
+		 *return ajax对象。
+		 */
+			var register = function(params){
+			var params = {
+				username: document.getElementById().value,
+				password: document.getElementById().value,
+				type: register
+			}
+			var aa = $.ajax({
+				async:true,
+				data:params,
+				url:'http://120.79.152.58/controller.php',
+				dataType:"json",
+				type:"post"
+			});
+			return aa;
+		};
+		/*验证是否能登录成功
+		 *params 内容：name(用户名),password(密码),type(值为login)。
+		 *return ajax对象。
+		 */
+		var login1 = function(params){
+			var params = {
+				username: document.getElementById().value,
+				password: document.getElementById().value,
+				type: login
+				
+			};
+			var aa = $.ajax({
+				async:true,
+				data:params,
+				url:'http://120.79.152.58/controller.php',
+				dataType:"json",
+				type:"post"
+			});
+			return aa;
+		};
+		</script>
+ <script>
+ function login(){
+	
+		var Model = function(){
+		
+		this.callParent();	//这里调用callParent , 就是父类的方法 , 返回父类方法中的内容 
+	};
+
+			
+			
+			//！需要重写可以实现对应功能的基本的方法
+	
+//登录按钮
+	Model.prototype.login = function(event){
+		
+		var name = this.getElementById("username").value();
+		
+		var password = $(document.getElementById("password")).value();
+		
+		if (!name&&!password) {
+			alert("请填写完整");	//显示提示信息
+		}
+		else{
+			var login = common.login({name:name,password:password,type:'login'});
+			
+			//回调，then方法
+			login.then(function(data){
+				if (data.status==200) {
+					alert("登录成功");
+				}
+				else{
+					alert("检查帐号和密码");
+				}
+			}.bind(this));	//直接调用bind(this)方法,使回调内的作用域，和全局作用域一致（bind(this)方法是原生的）
+		}
+		
+		
+	};
+	
+	
+	return Model;
+		
+	
+}; 
+ </script>
+ 
+ 
+</body>  
+
+</html>

@@ -1,0 +1,172 @@
+
+/**
+	@name $UI/system/lib/base/url
+	@class
+	@category javascript
+	@model UI2
+	@description URL工具类
+	@param {String} url
+	@param {String} mode 模式, 即值范围URL.VLS_MODE, URL.CLASSIC_MODE
+	@see $UI/system/lib/base/url.VLS_MODE
+	@see $UI/system/lib/base/url.CLASSIC_MODE
+	@returns {$UI/system/lib/base/url}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getLanguage
+	@function
+	@description 获取语言
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getSkin
+	@function
+	@description 获取风格
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getDevice
+	@function
+	@description 获取设备类型, 值域{"pc", "m"}
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getVersion
+	@function
+	@description 获取版本号
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#setLanguage
+	@function
+	@description 设置语言
+	@param {String} val
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/url#setSkin
+	@function
+	@description 设置风格
+	@param {String} val
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/url#setDevice
+	@function
+	@description 设置设备类型
+	@param {String} val
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/url#setVersion
+	@function
+	@description 设置版本号
+	@param {String} val
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getBSessionID
+	@function
+	@description 获取bsessionid
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#toString
+	@function
+	@param {Boolean} encode 是否需要url编码
+	@description 转换成url字符串
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getPathname
+	@function
+	@description 获取pathname
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getVLS
+	@function
+	@description 获取VLS, 即版本号+语言+风格
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#setParam
+	@function
+	@description 设置参数
+	@param {String} val 格式类似"p1=v1&p2=v2"
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/url#setParam
+	@function
+	@description 设置参数
+	@param {Object} val json格式的map, 例如{p1:1, p2:2}
+	@returns {void}
+*/
+
+
+/**
+	@name $UI/system/lib/base/url#setParam
+	@function
+	@description 设置参数
+	@param {String} name 参数名称
+	@param {String} val	参数值
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getParam
+	@function
+	@description 获取参数值
+	@param {String} name 参数名称
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url#setHash
+	@function
+	@description 设置hash
+	@param {String} val
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/url#getHash
+	@function
+	@description 获取hash
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url.getLanguage
+	@function
+	@description 获取语言
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url.getSkin
+	@function
+	@description 获取风格
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/url.getDevice
+	@function
+	@description 获取设备类型, 值域{"pc", "m"}
+	@returns {String}
+*/

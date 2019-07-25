@@ -1,0 +1,87 @@
+/**
+	@name $UI/system/lib/base/operation
+	@class 
+	@extends $UI/system/lib/base/object
+	@mixes  $UI/system/lib/base/observable
+	@category javascript
+	@model UI2
+	@description 操作基类
+*/
+
+/**
+	@name $UI/system/lib/base/operation#constructor
+	@function
+	@description 构造函数
+	@param config 操作配置
+	@param owner 操作拥有者
+	@return {void}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#getLabel
+	@function
+	@description 获取显示名称
+	@return {String}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#setLabel
+	@function
+	@description 设置显示名称
+	@param {String} value 显示名称
+	@return {void}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#getIcon
+	@function
+	@description 获取图标样式
+	@return {String}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#setIcon
+	@function
+	@description 设置图标样式
+	@param {String} value 图标样式
+	@return {void}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#getEnable
+	@function
+	@description 获取是否可用
+	@return {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#setEnable
+	@function
+	@description 设置是否可用
+	@param {Boolean} value
+	@return {void}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#getVisible
+	@function
+	@description 获取是否可见
+	@return {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/operation#setVisible
+	@function
+	@description 设置是否可见
+	@param {Boolean} value
+	@return {void}
+*/
+
+
+/**
+	@name $UI/system/lib/base/operation#execute
+	@function
+	@description 执行操作
+	@param context
+	@return obj
+*/

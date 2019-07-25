@@ -1,0 +1,87 @@
+/**
+	@name $UI/system/lib/base/string
+	@class
+	@category javascript
+	@model UI2
+	@description String工具类
+*/
+
+/**
+	@name $UI/system/lib/base/string.trim
+	@function
+	@description 清除前后两端的空白字符
+	@param {String} str
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/string.splitAndTrim
+	@function
+	@description 用指定的元素分隔成字符串数组, 并对每个元素执行trim
+	@param {String} str 字符串
+	@param {String} spliter 分隔符
+	@returns {String[]}
+*/
+
+/**
+	@name $UI/system/lib/base/string.format
+	@function
+	@description 字符串格式化, 参数个数动态
+	@param {String} str 字符串
+	@param {Object} options 
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/string.toInt
+	@function
+	@description 转换成整数
+	@param {String} str 字符串
+	@param {Integer} defaultValue 
+	@returns {Integer}
+*/
+
+/**
+	@name $UI/system/lib/base/string.toFloat
+	@function
+	@description 转换成浮点数
+	@param {String} str 字符串
+	@param {Float} defaultValue 
+	@returns {Float}
+*/
+
+/**
+	@name $UI/system/lib/base/string.HTMLEncode
+	@function
+	@description html编码
+	@param {String} str 字符串
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/string.HTMLDecode
+	@function
+	@description html解码
+	@param {String} str 字符串
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/string.zeros
+	@function
+	@description 补零
+	@param {String} value 字符串
+	@param {Integer} length 补零后的长度
+	@param {Boolean} right 是否右边补零, true表示右边补零, false表示左边补零
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/string.camelize
+	@function
+	@description 首字母转大写
+	@param {String} str 字符串
+	@returns {String}
+*/
+
+

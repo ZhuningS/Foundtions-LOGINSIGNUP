@@ -1,0 +1,108 @@
+/**
+	@name $UI/system/lib/base/push
+	@class 
+	@category javascript
+	@model UI2
+	@extends $UI/system/lib/base/object
+	@description 推送相关
+*/
+ 
+/**
+	@name $UI/system/lib/base/push.MESSAGE_EVENT
+	@property
+	@default "onMessage"
+	@description 接收消息事件
+	@example
+	<xmp>
+	事件对象的内容如下：
+	{
+		message: {
+			type: "default", //消息类型
+			title: "xx", //消息标题
+			url: "", //消息处理页面
+			surl: "", //消息处理页面的短地址
+		},
+		cancel: false
+	}
+	</xmp>	
+*/
+ 
+  
+/**
+	@name $UI/system/lib/base/push.onMessage
+	@event
+	@description 接收消息事件
+	@param {$UI/system/lib/base/push#MessageEvent} event 它的结构如下:
+<xmp>
+	{
+		message: {
+			type: "default", //消息类型
+			title: "xx", //消息标题
+			url: "", //消息处理页面
+			surl: "", //消息处理页面的短地址
+		},
+		cancel: false
+	}
+</xmp>	
+*/
+ 
+/**
+	@name $UI/system/lib/base/push#MessageEvent
+	@class
+	@category EventClass
+	@model UI2
+	@description 接收消息事件
+	@see $UI/system/lib/base/push#onMessage
+*/
+
+/**
+	@name $UI/system/lib/base/push#MessageEvent#cancel
+	@property 
+	@description 是否取消后续处理
+	@type Boolean
+*/
+
+/**
+	@name $UI/system/lib/base/push#MessageEvent#message
+	@property 
+	@description 消息对象
+	@type $UI/system/lib/base/push#MessageObject
+*/
+
+/**
+	@name $UI/system/lib/base/push#MessageObject
+	@class
+	@category EventClass
+	@model UI2
+	@description 消息对象
+	@see $UI/system/lib/base/push#onMessage
+*/
+
+
+/**
+	@name $UI/system/lib/base/push#MessageObject#type
+	@property 
+	@description 消息类型
+	@type String
+*/
+
+/**
+	@name $UI/system/lib/base/push#MessageObject#title
+	@property 
+	@description 消息标题
+	@type String
+*/
+
+/**
+	@name $UI/system/lib/base/push#MessageObject#url
+	@property 
+	@description 消息处理页面
+	@type String
+*/
+
+/**
+	@name $UI/system/lib/base/push#MessageObject#surl
+	@property 
+	@description 消息处理页面的短地址
+	@type String
+*/

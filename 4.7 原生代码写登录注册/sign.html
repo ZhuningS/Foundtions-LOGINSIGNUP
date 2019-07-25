@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 引用css文件 -->
+<link type="text/css" rel="stylesheet" href="./sign.css"></link>
+
+<!-- 引用js文件， jQuery查询 -->			
+<script src="./jquery.js"></script> 
+
+<!-- 引用require.js文件， jQuery查询 -->
+<script src="./require.js"></script> 
+
+<!-- 调用ajax()方法，发送服务器请求，回调 -->
+<!-- <script> $.ajax({url: " "}) </script> -->
+
+<script src="./common.js"></script> 
+		
+<!-- 调用外部sign.js文件 -->	
+<script type="text/javascript" src="./sign.js"></script>
+		
+
+<title>注册页面</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+
+
+<body class="sub">
+
+<div>
+	<center><h4>注册</h4></center>
+</div>
+	
+	
+<div class=" " id=" "  style="width:100%;text-align:center">	
+<center>
+<!-- 表单 -->	
+<form name="login" method="post" action=" ">
+  <table width="90%" border="0" cellpadding="8" class="form">
+    <tr>
+      <td colspan="3" class="HeaderColor">
+        
+               
+      </td>
+    </tr>
+	<!-- 用户名 -->	
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor" nowrap>
+        <label for="username"> 用户名：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="username" name="textfield">
+        <br>
+        <span class="small">*请输入用户名.</span>
+      </td>
+    </tr><!-- 密码 -->	
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor">
+        <label for="password">密码：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="password" name="textfield2">
+		<br>
+        <span class="small">*请输入密码</span>
+		
+      </td>
+    </tr>
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor">
+        <label for="repassword"> 确认密码：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="repassword" name="textfield3">
+        <br>
+        <span class="small">*请输入确认密码</span>
+      </td>
+    </tr>
+    
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor">
+        <label for="email">邮箱：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="email" name="textfield6" size="50">
+        <br>
+        <span class="small">*请输入邮箱</span>
+      </td>
+    </tr>
+          
+      
+
+    </tr>
+	
+    <tr style="vertical-align: middle" class="FooterColor">
+      
+	  <td colspan="3">
+	  
+	  </td>
+	  
+    </tr>
+	
+  </table>
+</center>
+</form>
+
+<div class=" " id="div5">
+		<center>
+        <input type="button" name="signbtn" id="div5" value="注册" onclick="regBtnClick()">
+		</center>
+	  
+	  
+</body>
+</html>

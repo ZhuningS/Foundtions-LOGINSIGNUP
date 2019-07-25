@@ -1,0 +1,15 @@
+/**
+	@name $UI/system/lib/base/error
+	@class
+	@category javascript
+	@model UI2
+	@description 错误工具类
+*/
+
+/**
+	@name $UI/system/lib/base/error.create
+	@function
+	@description 创建错误对象
+	@param {$UI/system/lib/base/message} message 消息
+	@returns {$UI/system/lib/base/error}
+*/

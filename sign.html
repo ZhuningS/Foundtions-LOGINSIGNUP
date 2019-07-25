@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 引用css文件 -->
+<link type="text/css" rel="stylesheet" href="./sign.css"></link>
+
+<!-- 引用js文件， jQuery查询 -->			
+<script src="./jquery.js"></script> 
+
+<!-- 引用require.js文件， jQuery查询 -->
+<!-- <script src="./require.js"></script>  -->
+
+<!-- 调用ajax()方法，发送服务器请求，回调 -->
+<!-- <script> $.ajax({url: " "}) </script> -->
+
+<!-- <script src="./common.js"></script>  -->
+		
+<!-- 调用外部sign.js文件 -->	
+<!-- <script type="text/javascript" src="./sign.js"></script>-->		
+
+<title>注册页面</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+
+
+<body class="sub">
+
+<div>
+	<center><h4>注册</h4></center>
+</div>
+	
+	
+<div class=" " id=" "  style="width:100%;text-align:center">	
+<center>
+<!-- 表单 -->	
+<form name="login" method="post" action=" ">
+  <table width="90%" border="0" cellpadding="8" class="form">
+    <tr>
+      <td colspan="3" class="HeaderColor">
+        
+               
+      </td>
+    </tr>
+	<!-- 用户名 -->	
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor" nowrap>
+        <label for="username"> 用户名：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="username" name="textfield">
+        <br>
+        <span class="small">*请输入用户名.</span>
+      </td>
+    </tr><!-- 密码 -->	
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor">
+        <label for="password">密码：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="password" name="textfield2">
+		<br>
+        <span class="small">*请输入密码</span>
+		
+      </td>
+    </tr>
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor">
+        <label for="repassword"> 确认密码：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="repassword" name="textfield3">
+        <br>
+        <span class="small">*请输入确认密码</span>
+      </td>
+    </tr>
+    
+    <tr style="vertical-align: middle">
+      <td style="text-align: right" class="LabelColor">
+        <label for="email">邮箱：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="email" name="textfield6" size="50">
+        <br>
+        <span class="small">*请输入邮箱</span>
+      </td>
+    </tr>
+          
+      
+
+    </tr>
+	
+    <tr style="vertical-align: middle" class="FooterColor">
+      
+	  <td colspan="3">
+	  
+	  </td>
+	  
+    </tr>
+	
+  </table>
+</center>
+</form>
+
+<div class=" " id="div5">
+		<center>
+        <input type="button" name="signbtn" id="div5" value="注册" onclick="regBtnClick()">
+		</center>
+</div>
+<script>
+			/*注册新用户
+		 *params 内容：name(用户名),password(密码),email(电子邮箱),type(值为register)。
+		 *return ajax对象。
+		 */
+			var register = function(params){
+			var params = {
+				username: document.getElementById().value,
+				password: document.getElementById().value,
+				type: register
+			}
+			var aa = $.ajax({
+				async:true,
+				data:params,
+				url:'http://120.79.152.58/controller.php',
+				dataType:"json",
+				type:"post"
+			});
+			return aa;
+		};
+		/*验证是否能登录成功
+		 *params 内容：name(用户名),password(密码),type(值为login)。
+		 *return ajax对象。
+		 */
+		var login = function(params){
+			var params = {
+				username: document.getElementById().value,
+				password: document.getElementById().value,
+				type: login
+				
+			};
+			var aa = $.ajax({
+				async:true,
+				data:params,
+				url:'http://120.79.152.58/controller.php',
+				dataType:"json",
+				type:"post"
+			});
+			return aa;
+		};
+		</script>
+		
+<script>
+function regBtnClick(){
+
+	var Model = function(){
+		this.callParent();
+	};
+
+//注册按钮
+	Model.prototype.regBtnClick = function(event){
+		var name = document.getElementById("username").value();
+		var pwd = document.getElementById("password").value();
+		var repwd = document.getElementById("repassword").value();
+		var email = document.getElementById("email").value();
+		
+		if (!name||!pwd||!repwd||!email) {
+			alert("请完整填写页面上的信息");//显示提示信息
+			return 0;
+		}
+		else{
+			if (pwd!==repwd) {
+				alert("两次密码输入不一致");
+				return 0;
+			}
+			var reg = new RegExp("^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$");
+			if (!reg.test(email)) {	//reg.test为正则验证，test() 方法用于检测一个字符串是否匹配某个模式.
+				alert("邮箱只允许英文字母、数字、下划线、英文句号、以及中划线");
+				return 0;
+			}
+			var register = common.register({name:name,password:pwd,email:email,type:'register'});
+			
+			//ajax的回调,then方法
+			register.then(function(data){
+				if (data.status==200) {
+					alert("注册成功");
+					Response.Write("<script language=\"javascript\">window.opener=null;window.close();</script>");//关闭页面
+				}
+				else{
+					alert("邮箱已存在");
+				}
+			}.bind(this));	//使回调内的作用域，和全局作用域一致 ,直接引用bind(this)方法
+			
+		}
+		
+	};
+
+	return Model;
+};
+</script>
+	  
+	  
+</body>
+</html>

@@ -1,0 +1,8 @@
+/**
+	@name $UI/system/lib/base/modelComponent
+	@class 
+	@category javascript
+	@extends $UI/system/lib/base/component
+	@model UI2
+	@description 非可视组件基类
+*/

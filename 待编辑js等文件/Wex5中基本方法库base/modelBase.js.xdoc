@@ -1,0 +1,434 @@
+/**
+	@name $UI/system/lib/base/modelBase
+	@class
+	@category javascript
+	@model UI2
+	@description 页面VM
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#params
+	@property
+	@description 参数对象
+	@type {Object}
+*/
+
+
+/**
+	@name $UI/system/lib/base/modelBase#owner
+	@property
+	@description 当前页面的调用者对象
+	@type {$UI/system/lib/base/modelBase#OwnerClass}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#OwnerClass
+	@class
+	@category EventClass
+	@model UI2
+	@description 当前页面的调用者
+*/
+
+
+/**
+	@name $UI/system/lib/base/modelBase#OwnerClass#send
+	@function
+	@param {Object} data 返回的数据
+	@description 向页面调用者返回数据
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#OwnerClass#close
+	@function
+	@description 关闭当前页面
+*/
+
+
+/**
+	@name $UI/system/lib/base/modelBase#call
+	@function
+	@description 调用指定的函数
+	@param {Object} caller 函数执行上下文this
+	@param {Function} fn 函数
+	@returns {Object}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#ref
+	@function
+	@description 获取列的值
+	@param {String} col 列标识
+	@returns {Object}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getParent
+	@function
+	@description 获取父VM
+	@examples 一个页面A可以通过WindowContainer嵌入子页面B，这时页面B中VM的getParent返回的是页面A的VM
+	@returns {$UI/system/lib/base/modelBase}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getParentModel
+	@function
+	@description 获取父VM
+	@examples 一个页面A可以通过WindowContainer嵌入子页面B，这时页面B中VM的getParent返回的是页面A的VM
+	@returns {$UI/system/lib/base/modelBase}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getRootNode
+	@function
+	@description 获取当前页面的根节点
+	@returns {Element}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#close
+	@function
+	@description 关闭当前页面
+	@returns {void}
+*/
+
+
+/**
+	@name $UI/system/lib/base/modelBase#isConctructed
+	@function
+	@description 判断当前页面是否构造完成
+	@returns {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getStatus
+	@function
+	@description 获取页面模型构造状态
+	@returns {Integer}
+	@see $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCT
+	@see $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCTING
+	@see $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCT_DONE
+	@see $UI/system/lib/base/modelBase.MODEL_STATUS_LOAD
+	@see $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCTED
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#componentPromise
+	@function
+	@description 异步获取组件
+	@param {Object} xidOrNode 组件xid或组件节点
+	@returns {$UI/system/lib/base/component}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#registerComponent
+	@function
+	@description 注册组件实例（只有数据组件需要自己注册）
+	@param {String} xid 组件标识
+	@param {$UI/system/lib/base/component} component 组件实例
+	@returns {$UI/system/lib/base/component}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#unRegisterComponent
+	@function
+	@description 取消组件实例（只有数据组件需要自己取消）
+	@param {String} xid 组件标识
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getComponent
+	@function
+	@description 获取组件
+	@param {Object} xidOrNode 组件xid或组件节点
+	@returns {$UI/system/lib/base/component}
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getComponents
+	@function
+	@description 获取组件
+	@param {String} xid 组件xid
+	@returns {Array} 组件数组
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#comp
+	@function
+	@description 获取组件
+	@param {Object} xidOrNode 组件xid或组件节点
+	@returns {$UI/system/lib/base/component}
+	@see $UI/system/lib/base/modelBase#getComponent
+*/
+
+
+/**
+	@name $UI/system/lib/base/modelBase#comps
+	@function
+	@description 获取组件
+	@param {String} xid 组件xid
+	@returns {Array} 组件数组
+	@see $UI/system/lib/base/modelBase#getComponents
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getIDByXID
+	@function
+	@description 根据xid获取id
+	@param {String} xid
+	@returns {String} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getElementByXid
+	@function
+	@description 根据xid获取Element
+	@param {String} xid
+	@returns {Element} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getElementsByXid
+	@function
+	@description 根据xid获取Element列表
+	@param {String} xid
+	@returns {Object} Element列表 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#removeElement
+	@function
+	@description 删除指定的节点
+	@param {Element} element 
+	@returns {Object} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#removeElementByXid
+	@function
+	@description 根据xid删除指定的节点
+	@param {String} xid 
+	@returns {void} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getContextID
+	@function
+	@description 获取上下文唯一标识
+	@returns {String} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getContext
+	@function
+	@description 获取上下文
+	@returns {$UI/system/lib/base/context} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#postMessage
+	@function
+	@description 向VM发送一条消息，触发{$UI/system/lib/base/modelBase.MESSAGE_EVENT}事件
+	@param {String} message
+	@returns {void} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#addComponent
+	@function
+	@description 添加组件
+	@param {Element} parentElement 组件的父节点
+	@param {$UI/system/lib/base/component} component 组件实例
+	@param {Element} targetElement 插入位置 
+	@returns {void} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#addNode
+	@function
+	@description 添加dom节点
+	@param {Element} parentElement 组件的父节点
+	@param {Element} element 节点
+	@param {Element} targetElement 插入位置 
+	@returns {void} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#addNodes
+	@function
+	@description 添加dom节点
+	@param {Element} parentElement 组件的父节点
+	@param {List<Element>} elements 节点列表
+	@param {Element} targetElement 插入位置 
+	@returns {void} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#removeNode
+	@function
+	@description 删除dom节点
+	@param {Element} element 节点
+	@returns {void} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#getConfig
+	@function
+	@description 获取当前的配置参数,即.w同名的.json配置
+	@returns {Object} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase#removeComponent
+	@function
+	@description 删除组件
+	@param {$UI/system/lib/base/component} component 组件实例
+	@returns {void} 
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.ACTIVE_EVENT
+	@property
+	@default "onActive"
+	@description 页面激活事件
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.INACTIVE_EVENT
+	@property
+	@default "onInactive"
+	@description 页面离开事件
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.MESSAGE_EVENT
+	@property
+	@default "onMessage"
+	@description 页面消息事件
+	@example
+	<xmp>
+	事件对象的内容如下：
+{
+    source: this, //页面模型
+    message: message //消息内容
+}
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_CONSTRUCT_EVENT
+	@property
+	@default "onModelConstruct"
+	@description 页面模型构造前事件
+	@example
+	<xmp>
+	事件对象的内容如下：
+{
+    source: this //页面模型
+}
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_CONSTRUCTING_EVENT
+	@property
+	@default "onModelConstructing"
+	@description 页面模型构造中事件，主要用于数据组件加载数据
+	@example
+	<xmp>
+	事件对象的内容如下：
+{
+    source: this //页面模型
+}
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_CONSTRUCT_DONE_EVENT
+	@property
+	@default "onModelConstructDone"
+	@description 页面模型构造完事件
+	@example
+	<xmp>
+	事件对象的内容如下：
+{
+    source: this //页面模型
+}
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.LOAD_EVENT
+	@property
+	@default "onLoad"
+	@description 页面加载完事件
+	@example
+	<xmp>
+	事件对象的内容如下：
+{
+    source: this //页面模型
+}
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.PARAMS_RECEIVE_EVENT
+	@property
+	@default "onParamsReceive"
+	@description 接收参数事件
+	@example
+	<xmp>
+	事件对象的内容如下：
+{
+    source: this, //页面模型
+    params: data //参数对象
+}
+	</xmp>
+*/
+
+
+/**
+	@name $UI/system/lib/base/modelBase.UNLOAD_EVENT
+	@property
+	@default "onunLoad"
+	@description 页面关闭事件
+	@example
+	<xmp>
+	事件对象的内容如下：
+{
+    source: this //页面模型
+}
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCT
+	@property
+	@default 1
+	@description 页面模型构造前
+*/
+
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCTING
+	@property
+	@default 2
+	@description 页面模型构造中
+*/
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCT_DONE
+	@property
+	@default 3
+	@description 页面模型构造
+*/
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_STATUS_LOAD
+	@property
+	@default 4
+	@description 页面模型构造Load事件中
+*/
+/**
+	@name $UI/system/lib/base/modelBase.MODEL_STATUS_CONSTRUCTED
+	@property
+	@default 5
+	@description 页面模型构造完成
+*/

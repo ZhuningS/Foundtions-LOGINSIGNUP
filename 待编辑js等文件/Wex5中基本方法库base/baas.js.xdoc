@@ -1,0 +1,74 @@
+/**
+	@name $UI/system/lib/base/baas
+	@class
+	@category javascript
+	@model UI2
+	@description Baas前端JS API
+	@example 
+	<xmp> 
+	Model.prototype.orderDataCustomRefresh = function(event) {
+		// 获取当前数据对象
+		var data = event.source;
+		// 构造请求参数
+		var params = {
+			// 列定义
+			"columns" : Baas.getDataColumns(data), 
+			// 分页信息 - 行数
+			"limit" : event.limit,
+			// 分页信息 - 行偏移
+			"offset" : event.offset,
+			// 检索关键字
+			"search" : this.getElementByXid("searchInput").value
+		};
+		// 请求成功后的回调方法
+		var success = function(resultData) {
+			// 通过event.options.append判断数据是否增量加载
+			var append = event.options && event.options.append;
+			// 加载返回数据到data
+			data.loadData(resultData, append);
+		};
+		// 发送请求
+		Baas.sendRequest({
+			"url" : "/demo", // servlet请求地址
+			"action" : "queryOrder", // action
+			"params" : params, // action对应的参数
+			"success" : success // 请求成功后的回调方法
+		});
+	};
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/baas.BASE_URL
+	@property
+	@type {String}
+	@description baas请求的基础url，默认值：/baas，开发者根据需求可修改成自己的baas服务url
+*/
+
+
+/**
+	@name $UI/system/lib/base/baas.sendRequest
+	@function
+	@description 请求后端Baas服务
+	@param {Object} options
+	<br/><b>结构如下：</b>
+	<xmp> 
+	{
+		"async" : 是否异步请求，默认false
+		"baseUrl" : 基础服务端地址，默认：/baas，如果访问其他服务器需要完整路径，如：http://baas.justep.com/baas
+ 		"url" : 服务端请求地址，不包含BASE_URL
+ 		"action" : 动作标识
+ 		"params" : 动作对应的参数
+ 		"success" : 请求成功后的回调，参数(resultData, xhr)
+ 		"error" : 请求失败后的回调，参数(msg, xhr)
+	}
+	</xmp>
+*/
+
+/**
+	@name $UI/system/lib/base/baas.getDataColumns
+	@function
+	@description 获得数据集的列定义，用于在Baas查询时，传到服务端以正确构造Table数据
+	@param {Data} data
+	@returns {Object}
+*/

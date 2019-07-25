@@ -1,0 +1,35 @@
+/**
+	@name $UI/system/lib/base/uuid
+	@class 
+	@category javascript
+	@model UI2
+	@description UUID类
+	@example
+	<xmp>
+		alert(UUID.createUUID(););
+		var uuid = new UUID();
+		alert(uuid.valueOf());
+	</xmp>		
+*/
+
+
+/**
+	@name $UI/system/lib/base/uuid#valueOf
+	@fun$UI/system/lib/base/uuid#
+	@description 获取uuid
+	@return {string}
+*/
+
+/**
+	@name $UI/system/lib/base/uuid#toString
+	@function
+	@description 获取uuid
+	@return {string}
+*/
+
+/**
+	@name $UI/system/lib/base/uuid.createUUID
+	@function
+	@description 产生UUID
+	@return {string}
+*/

@@ -1,0 +1,33 @@
+
+提交和ajax回调如何实现，引用
+
+按钮功能，怎么把input和js文件关联起来，没反应，哪里出错了？
+
+wex5
+
+语法
+哪些只能在wex5中使用？
+
+
+map和set集合？
+
+
+方法怎么自定义？
+在对象中定义吗
+怎么查看几种对象的 ，内置的，原生中可用的方法？查文档
+
+
+
+
+需要重写Wex5中基本的方法：
+
+.comp（）方法的功能是是查找匹配吗？
+
+Util对象
+
+
+SyntaxError: missing : after property id[详细了解]
+login.html:14:12
+密码字段出现在一个不安全的 http:// 表单动作中。这是一个可能导致用户登录凭据被窃取的安全风险。[详细了解]
+login.html
+TypeError: require is not a function[详细了解]

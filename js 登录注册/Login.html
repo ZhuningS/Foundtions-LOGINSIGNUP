@@ -1,0 +1,130 @@
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style type="text/css" >
+	</style>
+    <link type="text/css" rel="stylesheet" href="./login.css"></link>
+	<script type="text/JavaScript">
+        function getCookie(str) {
+            var arr = document.cookie.match(new RegExp("(^| )" + str + "=([^;]*)(;|$)"));
+            if (arr != null) {
+                return unescape(arr[2]); //unescape() 函数可对通过 escape() 编码的字符串进行解码。
+            }
+            return null;
+        }
+        var name = getCookie("username");
+        var pwd = getCookie("password");
+        function myLogin() {
+            var username = document.getElementById("txtUserName").value;
+            var password = document.getElementById("txtPassword").value;
+            if (username == null || username == "") {
+                alert("用户名不能为空");
+            }
+            else if (password == null || password == "") {
+                alert("密码不能为空");
+            }
+            else if (username != name || password != pwd) {
+                alert("用户名或密码错误");
+            }
+            else {
+                alert("登录成功");
+            }
+			
+			/*验证是否能登录成功
+		 *params 内容：name(用户名),password(密码),type(值为login)。
+		 *return ajax对象。
+		 */
+		function login(params){
+			<!-- var params = { -->
+				<!-- username: document.getElementById("username").value, -->
+				<!-- password: document.getElementById("password").val(), -->
+				<!-- type: login -->
+				
+			<!-- }; -->
+			var aa = $.ajax({
+				async:true,
+				data:params,
+				url:'http://120.79.152.58/controller.php',
+				dataType:"json",
+				type:"post"
+			});
+			return aa;
+		};
+		
+        }
+    </script>
+</head>
+<body>
+<div class="content">
+<title>登录页面</title>
+<center><h3>登录</h3></center>
+
+
+
+<!-- 表单 -->	
+<form name="login" method="post" action="http://120.79.152.58/controller.php">
+<center>	
+<!-- 表单提交到哪里？ -->
+	<table width="100%" border="0" aling=center cellspacing="0" cellpadding="1" class="form">
+	
+		<table width="100%" border="0" aling=center cellspacing="0" cellpadding="4">
+
+		<tr style="vertical-align: top">
+			<td width="100%" class="TitleColor">
+						
+			
+			<label for="username"><strong>用户名：</strong></label>
+			
+        <input id="txtUserName" type="text" size="35" class="formtext" placeHolder="请输入账号"/>
+		
+		<br>
+			<p>
+			&nbsp
+			</p>
+			
+			<!-- 密码输入框 -->
+		<label for="password"><strong>密码：</strong></label>
+				
+		
+       <input id="txtPassword" type="password" size="35" class="formtext" placeHolder="请输入密码" />
+	   
+        <br>
+			<p>&nbsp </p>
+		
+		<center>
+            <input id="btnLogin" type="button" value="登录" onclick="myLogin();"/>
+           <!--  <input id="btnRegister" type="button" value="注册" onclick="javascript:window.location.href('Register.html')" /> -->
+		</center>	
+		
+		
+			</td>
+            
+		</tr>	
+		</table>
+			</td>
+            
+		</tr>
+			
+	</table>
+
+</center>		
+</form>
+		
+
+</div>
+
+<div id="div5" class="">
+			
+				
+			<center>			 
+			<a href = "./Register.html"><span id="span7"  class="form">注册账号</span> </a>
+			
+			
+			
+			<a href = " "><span id="span8"  class="form">忘记密码</span></a>
+			</center>
+			
+			
+</div>
+
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 引用js文件， jQuery查询 -->
+			
+<script src="./jquery-3.3.1.min.js"></script> 
+		
+<script src="./sign.js"></script> 
+		
+<!-- 调用ajax（）方法，发送服务器请求，回调 -->
+			
+<script> $.ajax({url="./common.js"}) </script>
+
+<title>注册页面</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+
+
+<body class="sub">
+
+
+<!-- 表单 -->	
+<form name="login" method="post" action=" ">
+  <table width="90%" aling=center border="0" cellpadding="8">
+    <tr>
+      <td colspan="3" class="HeaderColor">
+        
+        <center><h4>注册</h4></center>
+       
+      </td>
+    </tr>
+	<!-- 用户名 -->	
+    <tr style="vertical-align: top">
+      <td style="text-align: right" class="LabelColor" nowrap>
+        <label for="username"> 用户名：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="username" name="textfield">
+        <br>
+        <span class="small">*请输入用户名.</span>
+      </td>
+    </tr><!-- 密码 -->	
+    <tr style="vertical-align: top">
+      <td style="text-align: right" class="LabelColor">
+        <label for="password">密码：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="password" name="textfield2">
+		<br>
+        <span class="small">*请输入密码</span>
+		
+      </td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td style="text-align: right" class="LabelColor">
+        <label for="confirmpassword"> 确认密码：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="confirmpassword" name="textfield3">
+        <br>
+        <span class="small">*请输入确认密码</span>
+      </td>
+    </tr>
+    
+    <tr style="vertical-align: top">
+      <td style="text-align: right" class="LabelColor">
+        <label for="email">邮箱：</label>
+      </td>
+      <td colspan="2" class="TitleColor">
+        
+        <input type="text" id="email" name="textfield6" size="50">
+        <br>
+        <span class="small">*请输入邮箱</span>
+      </td>
+    </tr>
+          
+      
+
+    </tr>
+	
+    <tr style="vertical-align: top" class="FooterColor">
+      <center>
+	  <td colspan="3">
+        <input type="submit" name="SubmitName" value="注册">
+      </td>
+	  </center>
+    </tr>
+	
+  </table>
+</form>
+
+
+</body>
+</html>

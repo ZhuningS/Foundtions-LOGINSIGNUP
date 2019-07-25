@@ -1,0 +1,212 @@
+/**
+	@name $UI/system/lib/base/util
+	@class
+	@category javascript
+	@model UI2
+	@description Util工具类
+*/
+
+/**
+	@name $UI/system/lib/base/util.isBoolean
+	@function
+	@description 判断值的类型是否是Boolean类型
+	@param {Object} value
+	@returns {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/util.isString
+	@function
+	@description 判断值的类型是否是String类型
+	@param {Object} value
+	@returns {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/util.isFunction
+	@function
+	@description 判断是否是函数
+	@param {Object} value
+	@returns {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/util.isArray
+	@function
+	@description 判断值的类型是否是Array类型
+	@param {Object} value
+	@returns {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/util.toArray
+	@function
+	@description 转换成数组
+	@param {Object} iterable
+	@param {Integer} start
+	@param {Integer} end
+	@returns {Object} 数组
+*/
+
+/**
+	@name $UI/system/lib/base/util.clone
+	@function
+	@description 对象克隆
+	@param {Object} value
+	@returns {Object}
+*/
+
+/**
+	@name $UI/system/lib/base/util.isObject
+	@function
+	@description 判断值的类型是否是Object类型
+	@param {Object} value
+	@returns {Boolean}
+*/
+
+/**
+	@name $UI/system/lib/base/util.apply
+	@function
+	@description 
+	@param {Object} object
+	@param {Object} config
+	@param {Object} defaults
+	@returns {Object}
+*/
+
+/**
+	@name $UI/system/lib/base/util.addCookie
+	@function
+	@description 添加cookie
+	@param {String} name 名称
+	@param {String} value 值
+	@param {String} path 路径
+	@param {Integer} expiresHours 有效期,单位为小时,不设置为session有效
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/util.getCookie
+	@function
+	@description 获取cookie
+	@param {String} name 名称
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/util.deleteCookie
+	@function
+	@description 删除cookie
+	@param {String} name 名称
+	@param {String} path 路径
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/util.toExprString
+	@function
+	@description 转换成表达式
+	@param {String} dataType 类型
+	@param {Object} value 值
+	@param {Boolean} isKSQL 是否使用在KSQL中
+	@returns {String}
+*/
+
+/**
+	@name $UI/system/lib/base/util.disableTouchMove
+	@function
+	@description 取消节点上的触摸功能
+	@param {Element} e
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/util.enableTouchMove
+	@function
+	@description 开启节点上的触摸功能
+	@param {Element} e
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/util.hint
+	@function
+	@description 消息提醒
+	@param {String} text 显示的文本
+	@param {Object} options 选项 
+	<br/><b>结构如下：</b>
+	<xmp> 
+	{
+		"type: {string} 提示类型，取值范围：info、success、warning、danger，缺省：info
+		"delay" : {integer} 自动关闭时间，单位为：毫秒，缺省：3000
+		"parent": {DomNode}	父容器，缺省：body，使用jquery selector来设置或jquery对象，如"#abc" ".abc"		
+		"position": {string} 显示位置，取值范围：top、middle、bottom，缺省：top 
+		"style": {string} css样式，增加的自定义样式
+	}
+	</xmp>
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/util.confirm
+	@function
+	@description 询问提示框
+	@param {String} text 显示的文本
+	@param {function} onOk 确定的回调函数
+	@param {function} onCancel 取消的 回调函数
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/lib/base/util.callModelFn
+	@function
+	@description 执行model下的函数
+	@param {Object} option 执行函数相关参数 
+ <br/><b>option参数格式：</b>
+<xmp>  
+ {
+	fn: {string} 函数名,
+	context: {bindingContext} 绑定上下文,
+	domNode: {dom} html节点
+ }
+ context、domNode只需要给出一个，同时给出时context有效
+</xmp>
+	
+	@returns model下函数执行后的返回
+ @example
+  <xmp>
+    在html节点上绑定事件调用model的函数doClick,doClick接收参数event
+    var html = "<button onclick='justep.Util.callModelFn({domNode:event.target||event.srcElement,\"doClick\"},event)'>"
+    ...
+  </xmp> 	
+	
+*/
+
+/**
+	@name $UI/system/lib/base/util.bindModelFn
+	@function
+	@description 返回和model关联的function
+	@param {$UI/system/lib/base/modelBase} model 绑定的model 
+	@param {function} fn 函数 
+	@param {object} caller 执行函数的caller 
+	@returns {function} 下函数执行后的返回
+*/
+
+
+/**
+	@name $UI/system/lib/base/util.getModel
+	@function
+	@description 根据dom node返回相应的Model实例
+	@param {Element} element DOM节点 
+	@returns {$UI/system/lib/base/modelBase} 
+*/
+
+/**
+	@name $UI/system/lib/base/util.toUrl
+	@function
+	@description 转换$UI开头的url
+	@param {String} url $UI开头的url 
+	@returns {String} 
+*/
+
+

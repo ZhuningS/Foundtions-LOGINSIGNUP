@@ -1,0 +1,43 @@
+/**
+	@name $UI/system/lib/base/number
+	@class
+	@category javascript
+	@model UI2
+	@description Number工具类
+*/
+
+/**
+   @name $UI/system/lib/base/number.accDiv
+   @function
+   @description 高精度数据的除法运算
+   @param arg1 {Number} 被除数
+   @param arg2 {Number} 除数
+   @returns {Number} 返回除法运算结果
+ */
+
+/**
+   @name $UI/system/lib/base/number.accMul
+   @function
+   @description 高精度数据的乘法运算
+   @param arg1 {Number} 第一个乘数
+   @param arg2 {Number} 第二个乘数
+   @returns {Number} 返回乘法运算结果
+ */
+
+/**
+   @name $UI/system/lib/base/number.accAdd
+   @function
+   @description 高精度数据的加法运算
+   @param arg1 {Number} 第一个加数
+   @param arg2 {Number} 第二个加数
+   @returns {Number} 返回加法运算结果
+ */
+
+/**
+   @name $UI/system/lib/base/number.accSub
+   @function
+   @description 高精度数据的减法运算
+   @param arg1 {Number} 被减数
+   @param arg2 {Number} 减数
+   @returns {Number} 返回减法运算结果
+ */
